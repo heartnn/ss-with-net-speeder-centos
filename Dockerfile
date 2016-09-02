@@ -14,4 +14,4 @@ RUN yum clean all && \
     pip install shadowsocks
     
 # Configure container to run as an executable 
-CMD ["ssserver -p 20001 -k zzzshanghai -m aes-256-cfb"]
+CMD ssserver -p 20001 -k zzzshanghai -m aes-256-cfb
