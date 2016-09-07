@@ -2,7 +2,8 @@ FROM centos:latest
 
 MAINTAINER zzzshanghai 
 
-RUN yum clean all && \
+RUN rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-* && \
+    yum clean all && \
     yum makecache && \
     yum -y update && \
     yum -y install epel-release && \
