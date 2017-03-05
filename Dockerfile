@@ -12,4 +12,4 @@ RUN rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-* && \
     pip install shadowsocks
     
 # Configure container to run as an executable 
-CMD ssserver -p 20001 -k zzzshanghai -m aes-256-cfb
+CMD ssserver -p 20001 -k heartnn.com -m aes-256-cfb
